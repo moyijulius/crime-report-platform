@@ -67,20 +67,7 @@ function OfficerDashboard() {
           navigate('/login');
           return;
         }
-        
-        // For demo purposes, we'll use mock data instead of failing API call
-        // In production, replace this with the actual API call
-        // const response = await fetch('http://localhost:5000/api/officers/profile', {
-        //   headers: { Authorization: `Bearer ${token}` },
-        // });
-        
-        // if (!response.ok) {
-        //   throw new Error('Failed to fetch profile');
-        // }
-        
-        // const data = await response.json();
-        
-        // Mock data for demo
+      
         const mockData = {
           name: "Officer John Doe",
           badge: "ID: 12345",
@@ -387,22 +374,7 @@ function OfficerDashboard() {
     setSendingMessage(true);
     try {
       const token = localStorage.getItem("token");
-      
-      // Mock for demo - in production, use actual API
-      // const response = await fetch(
-      //   `http://localhost:5000/api/reports/${selectedReport.referenceNumber}/messages`,
-      //   {
-      //     method: "POST",
-      //     headers: {
-      //       "Content-Type": "application/json",
-      //       Authorization: `Bearer ${token}`,
-      //     },
-      //     body: JSON.stringify({
-      //       message: newMessage,
-      //       sender: "officer",
-      //     }),
-      //   }
-      // );
+     
 
       // Mock successful response
       const messageData = {
@@ -539,15 +511,7 @@ function OfficerDashboard() {
     try {
       const token = localStorage.getItem("token");
       
-      // In production, replace with actual API call
-      // const response = await fetch(`http://localhost:5000/api/reports/${reportId}/status`, {
-      //   method: "PUT",
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //     Authorization: `Bearer ${token}`,
-      //   },
-      //   body: JSON.stringify({ status: newStatus }),
-      // });
+      
       
       // Mock successful update
       const updatedReports = crimeReports.map((report) =>

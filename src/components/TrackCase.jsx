@@ -8,7 +8,7 @@ function TrackCase() {
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false); // Track login status
-  const [isAssociatedUser, setIsAssociatedUser] = useState(false); // Track if user is associated with the report
+  const [isAssociatedUser, setIsAssociatedUser] = useState(false); 
 
   // Check if the user is logged in on component mount
   useEffect(() => {

@@ -38,7 +38,7 @@ function Login() {
         
         // For admin users, set the adminToken immediately
         if (data.role === 'admin') {
-          localStorage.setItem('adminToken', data.token); // Change 'admin-token' to 'adminToken'
+          localStorage.setItem('adminToken', data.token); 
         }
         
         // Success toast

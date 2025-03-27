@@ -36,7 +36,7 @@ const handleSubmit = async (e) => {
     const response = await fetch('http://localhost:5000/api/reports', {
       method: 'POST',
       headers: {
-        Authorization: `Bearer ${token}`, // Add the token to the headers
+        Authorization: `Bearer ${token}`, 
       },
       body: formData, // Send FormData for file uploads
     });

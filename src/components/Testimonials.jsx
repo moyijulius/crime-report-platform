@@ -12,8 +12,8 @@ function Testimonials() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   
-  // Set the base URL for axios - adjust this to match your backend server URL
-  const API_URL = 'http://localhost:5000'; // Change this to match your server URL
+  // backend URL
+  const API_URL = 'http://localhost:5000'; 
 
   useEffect(() => {
     const fetchTestimonials = async () => {
